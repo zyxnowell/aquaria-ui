@@ -12,6 +12,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Make sure that you have the [aquaria-api](https://github.com/zyxnowell/aquaria-api) running.
 
+First run `npm install` on the project directory. 
+
 In the project directory, you can run: `npm run start`.
 
 CORS is only enabled on port:3007 so make sure you are running the app on port:3007. 
