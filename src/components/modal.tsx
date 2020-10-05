@@ -1,16 +1,5 @@
-import React, { useState, useEffect, Fragment } from "react";
-import {
-  Form,
-  Input,
-  Button,
-  Modal,
-  InputNumber,
-  Select,
-  notification,
-} from "antd";
-import { PlusSquareOutlined } from "@ant-design/icons";
-import { connect } from "react-redux";
-import * as actions from "../actions/aquaria";
+import React from "react";
+import { Form, Input, Modal, InputNumber, Select } from "antd";
 import { CollectionCreateFormProps } from "../models";
 
 const { TextArea } = Input;
@@ -57,7 +46,7 @@ const FormModal: React.FC<CollectionCreateFormProps> = ({
           .validateFields()
           .then((values) => {
             form.resetFields();
-            if (mode == "add") {
+            if (mode === "add") {
               onSubmit(values);
             } else {
               const newVal = {

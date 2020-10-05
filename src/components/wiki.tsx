@@ -1,15 +1,8 @@
-import React, { Fragment, useEffect, useState } from "react";
-import { Card, Input, Form, Row, Col } from "antd";
+import React, { useState } from "react";
+import { Card, Input, Row, Col } from "antd";
 import "../App.css";
-import {
-  DeleteOutlined,
-  EditOutlined,
-  QuestionCircleOutlined,
-} from "@ant-design/icons";
 import { connect } from "react-redux";
 import * as actions from "../actions/aquaria";
-import { Aquaria } from "../models";
-import FormModal from "./modal";
 
 const { Search } = Input;
 

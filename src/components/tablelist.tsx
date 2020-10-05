@@ -30,11 +30,6 @@ const TableList = (props: any) => {
     size: 5,
   };
 
-  let sortedInfo = {
-    columnKey: "",
-    order: null,
-  };
-
   const columns = [
     {
       title: "Name",
@@ -64,8 +59,8 @@ const TableList = (props: any) => {
       sorter: true,
       render: (text: any) => {
         let color = "green";
-        if (text == "Aggressive") color = "red";
-        else if (text == "Semi-Aggressive") color = "orange";
+        if (text === "Aggressive") color = "red";
+        else if (text === "Semi-Aggressive") color = "orange";
 
         return (
           <Tag color={color} key={text}>
