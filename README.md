@@ -1,5 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Tools used
+
+* Ant.design
+* React (Typescript)
+* Redux 
+* Redux thunk
+* Axios
+
 ## How to use
 
 Make sure that you have the [aquaria-api](https://github.com/zyxnowell/aquaria-api) running.
